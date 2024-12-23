@@ -18,7 +18,6 @@ public class String_Integer_04 {
 		// +,-를 제외한 연산자는 그냥 연산자로 인식하여 소괄호 안에 넣지 않아도 됨
 		System.out.println("5*3=" + 5*3);
 		System.out.println("5/3=" + 5/3);
-		
 	}
 
 }
