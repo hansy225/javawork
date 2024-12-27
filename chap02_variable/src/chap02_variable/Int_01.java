@@ -5,9 +5,9 @@ public class Int_01 {
 	public static void main(String[] args) {
 		// 변수 : 저장공간
 		/* int : 정수를 저장하는 공간 (4byte = 32bit)
-		   double : 실수를 저장하는 공간 (8)
-		   char : 문자 1개 (8)
-		   String : 문자열 (4)
+		   double : 실수를 저장하는 공간 (8byte)
+		   char : 문자 1개 (2byte, 유니코드)
+		   String : 문자열
 		 */
 		
 		// 컴퓨터 언어는 2진수로 되어 있음 --> 0,1로 이루어져 있음
@@ -33,8 +33,24 @@ public class Int_01 {
 		System.out.println(number2);
 		
 		int sum = number+number2;
-		System.out.println(number+ "+" +number2+ "=" + number+number2);
+		System.out.println(number+ "+" +number2+ "=" + (number+number2));
 		System.out.println(number+ "+" +number2+ "=" +sum);
+		
+		// 과제
+		/*
+		 int 저장 공간 2개를 만들기 
+		 각각 5와 3을 넣기 
+		 저장 공간의 각 값들을 사칙연산하여 출력하기
+		*/
+		int a;
+		a = 5;
+		
+		int b;
+		b = 3;
+		
+		int sum2 = a + b;
+		System.out.println("\n과제");
+		System.out.println(a + "+" + b + "=" + sum2);
 	}
 
 }
