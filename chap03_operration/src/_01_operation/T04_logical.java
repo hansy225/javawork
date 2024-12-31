@@ -5,7 +5,9 @@ public class T04_logical {
 	public static void main(String[] args) {
 		// 논리곱(and)과 논리합(or)
 		/*
-		 * 
+		 
+		 0 : 거짓 / 1 : 참
+		 
 		 x  y   논리곱(&&)  논리합(||)
 		 0  0      0         0
 		 0  1      0         1
@@ -27,7 +29,7 @@ public class T04_logical {
 		System.out.println("----------------------");
 		
 		// ! : not
-		boolean b1 = num1 >= num2;
+		boolean b1 = num1>=num2;
 		System.out.println(b1);
 		System.out.println(!b1);
 		// !! : not not (부정의 부정 = 긍정)
@@ -35,14 +37,14 @@ public class T04_logical {
 		
 		System.out.println("----------------------");
 		
-		// A~Z : 65~90, a : 97
+		// A~Z : 65~90, a : 97~
 		char ch1 = 'K';
 		System.out.println(ch1);
 		/* 
 		ch1 >= 'A' (참)
 			   (65, 66, 67, ..., 90, 91...)
 		ch1 <= 'Z' (참)
-		(63, 64, 65    ...    89, 90, 91...)
+   (... 63, 64, 65    ...    89, 90)
 		*/
 		System.out.println("대문자인가 ? " + (ch1>='A' && ch1<='Z'));  // System.out.println("대문자인가 ? " + (ch1>=65 && ch1<=90));
 		System.out.println("소문자인가 ? " + (ch1>='a' && ch1<='z'));

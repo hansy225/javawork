@@ -21,7 +21,7 @@ public class Report_08 {
 		
 		System.out.println("총점 : "+ (kor+math+com));
 		
-		double p = (kor+math+com)/3.0;  // float는 정수형이기 때문에 소수점이 안나옴 --> 나누기도 소수점으로 쓰기
+		double p = (kor+math+com)/3.0;  // float는 정수형이기 때문에 소수점이 안나옴(double 사용) --> 나누기도 소수점으로 쓰기
 		System.out.printf("평균 : %.2f", p);
 		
 		/* 설명
