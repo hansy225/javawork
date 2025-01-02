@@ -1,8 +1,8 @@
-package _01_operation;
+package _02_Ex;
 
 import java.util.Scanner;
 
-public class T05_Report {
+public class Ex01 {
 
 	public static void main(String[] args) {
 		/*

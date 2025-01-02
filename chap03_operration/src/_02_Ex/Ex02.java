@@ -1,8 +1,8 @@
-package _01_operation;
+package _02_Ex;
 
 import java.util.Scanner;
 
-public class T06_Report {
+public class Ex02 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -88,7 +88,8 @@ public class T06_Report {
 				age>19 ? "성인" : "청소년";
 		System.out.println("당신은 "+g+"입니다.");
 		
-
+		
+		// 7,8,9 문제 다시 풀어볼 것
 	/* 7. 사용자로부터 국어, 영어, 수학 점수를 입력받아 
 	   세 과목 점수가 각각 40점 이상이면서 평균이 60점 이상일 때 합격, 아니라면 불합격을 출력하세요.*/
 		System.out.print("극어 점수 입력 >> ");
@@ -98,18 +99,46 @@ public class T06_Report {
 		System.out.print("수학 점수 입력 >> ");
 		int math = scan.nextInt();
 		
-		int re1 = (kor+eng+math)/3;
-		//String pass = 
-				//kor,eng,math>40 && re1>60 ? "합격" : "불합격";
-		
+		double avg = (kor+eng+math)/3.0;
+		String re7 = kor >= 40 && eng >= 40 && math >= 40 && avg >= 60 ? "합격" : "불합격";
+		System.out.println(re7);
 
 	/* 8. 주민번호를 입력받아 남자인지 여자인지 출력하기
 			ex.
 			주민번호를 입력하세요(- 포함) : 123456-3123456 */
+		System.out.print("주민번호 입력(-포함) : ");
+				
+		// String regidentNum = scan.next();
+		// char gen = regidentNum.charAt(7);
+		
+		char regidentNum = scan.next().charAt(7);
+		
+		String gen = regidentNum == '1' || regidentNum == '3' ? "남자" : "여자";
+		System.out.println(gen);
+		
 
 	/*9.  사용자로부터 두 개를 입력 받고(num1, num2에 저장)
 	    또 다른 정수를 입력 받아 그 수가 num1 이하거나 num2 초과이면 true를 출력하고
 	    아니면 false를 출력하세요. (단, num1은 num2보다 작아야 함) */
+		System.out.print("2개의 정수 입력(첫번째 정수는 두번째 정수보다 작은 숫자이여야 함) : ");	
+		int num8 = scan.nextInt();
+		int num9 = scan.nextInt();
+		
+		System.out.print("정수 입력 : ");
+		int num10 = scan.nextInt();
+		
+		boolean re9 = num10 <= num8 || num10 > num9;
+		System.out.println(re9);
+		
+		// 10.
+		System.out.print("3개의 정수 입력 : ");
+		int num11 = scan.nextInt();
+		int num12 = scan.nextInt();
+		int num13 = scan.nextInt();
+		
+		boolean re10 = num11 == num12 && num11 == num13;
+		System.out.println("3개의 숫자가 모두 같은가? " + re10);
+		
 	}
 
 }
