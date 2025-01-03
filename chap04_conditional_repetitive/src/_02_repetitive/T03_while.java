@@ -53,7 +53,7 @@ public class T03_while {
 		while (true) {
 			System.out.println(++count);
 			if (count==5) {
-				break;
+				break;  // 조건식(if문)이 아니라 반복문을 나오는것임
 			}
 		}
 		
@@ -64,7 +64,7 @@ public class T03_while {
 			System.out.print("문자1개 입력(멈추려면 'q') : ");
 			char ch = sc.next().charAt(0);
 			if (ch=='q') {
-				break;  // 반복문 종료
+				break;  // 반복문 종료 --> break를 만나면 while문을 나옴
 			}
 			System.out.println(ch);
 		}
@@ -76,7 +76,7 @@ public class T03_while {
 		for (j=1; j<=10; j++) {
 			sum += j;
 			
-			if (sum>=30)
+			if (sum>=10)
 				break;
 		}
 		System.out.println(j+"까지의 합 : "+sum);
