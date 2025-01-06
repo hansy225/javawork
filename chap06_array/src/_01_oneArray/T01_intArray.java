@@ -98,12 +98,12 @@ public class T01_intArray {
 		
 		System.out.println("------------------------");
 		
-		//2+3
+		//2번+3번
 		int sum1 = 0;
 		for (int i=0; i<ar.length; i++) {
 			ar[i] = i*3;
 			if(i==ar.length-1)
-				System.out.print(ar[i] +"\n");
+				System.out.print(ar[i] +"\n");  // 맨 마지막 숫자에 콤마를 빼기 위해서 넣음
 			else
 				System.out.print(ar[i]+", ");
 			sum1 += ar[i];
