@@ -31,8 +31,8 @@ public class T01_main {
 		System.out.println(op.add(5, 7));
 		System.out.println(op.add(17283, 483948));
 		
-		int result2 = op.minus(987, 45);
-		System.out.println(result2);
+		int result2 = op.minus(987, 45);  // 942
+		System.out.println(result2);  // 942
 		
 		System.out.printf("%.1f", op.divide(7, 3));
 		

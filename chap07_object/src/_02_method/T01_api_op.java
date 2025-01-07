@@ -9,12 +9,12 @@ public class T01_api_op {
 	
 	// 매개변수 int형으로 2개 받기
 	
-	int add(int num1, int num2) {
+	int add(int num1, int num2) {  // 17283, 483948
 		int sum = num1 + num2;
 		return sum;
 	}
 	
-	int minus(int num1, int num2) {
+	int minus(int num1, int num2) {  // 947, 45
 		return num1-num2;
 	}
 	
@@ -26,7 +26,7 @@ public class T01_api_op {
 		return num1%num2;
 	}
 	
-	double divide(double num1, double num2) {
+	double divide(double num1, double num2) {  // 7.0, 3.0
 		return num1/num2;
 	}
 }

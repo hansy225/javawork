@@ -8,7 +8,7 @@ public class T01_api_method {
 	//  - 객체를 만들어 메소드를 호출했을 때 변수에 저장 할수 없음
 	//  - 객체를 만들어 메소드를 호출했을 때 출력문안에 메소드를 넣을수 없음
 	void print1() {
-		System.out.println("반환값이 없고 매개변수도 없는 메소드");
+		System.out.println("반환값이 없고 매개변수도 없는 메소드");  // T01_main에서 출력
 	}
 	
 	// 2. 반환형이 있는 메소드 : return이 반드시 있어야 함
@@ -20,8 +20,8 @@ public class T01_api_method {
 	*/
 	int print2() {
 		System.out.println("반환형이 int이고 매개변수는 없는 메소드");
-		int num = 5;
-		return num+5;
+		int num = 5;  // 똑같은 자료형으로 써야 함
+		return num+5;  // 나를 호출한 곳으로 내가 가져갈 값
 	}
 	
 	String print3() {
