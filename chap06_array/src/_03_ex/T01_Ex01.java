@@ -256,26 +256,26 @@ public class T01_Ex01 {
 		System.out.println("번호\t국어\t영어\t수학\t총점\t평균");
 		System.out.println("---------------------------------------------");
 		
-		int korSum, engSum, mathSum = 0;
-		korSum += score[i][0];
-		engSum += score[i][1];
-		mathSum += score[i][2]; 
-	
-		for (int i=0; i<score.length; i++) {
-			int sum12 = 0;  // 한 행을 돌고 나면 초기화
-			System.out.print(" " +(i+1) +"\t");
-			for (int j=0; j<score[i].length; j++) {
-				sum12 += score[i][j];
-				System.out.print(score[i][j] +"\t");
+		int korSum = 0;
+		int engSum = 0;
+		int mathSum = 0;
+		for(int i=0; i<score.length; i++) {  // 행
+			korSum += score[i][0];
+			engSum += score[i][1];
+			mathSum += score[i][2];
+			
+			int sum2 = 0;
+			System.out.print(" " + (i+1) + "\t");
+			for(int j=0; j<score[i].length; j++) {   // 열
+				sum2 += score[i][j];
+				System.out.print(score[i][j] + "\t");
 			}
-			System.out.printf("%d\t%.1f\n",sum12, (double)sum12/score[i].length);
+			System.out.printf("%d\t%.1f\n", sum2, (double)sum2/score[i].length);
 		}
-		System.out.println("---------------------------------------------");
-		System.out.println("총점\t" + korSum + "\t" + engSum + "\t"  + mathSum);
-		System.out.printf("평균\t%.1f\t%.1f\t%.1f\n", korSum/(double)5,engSum/(double)5,mathSum/(double)5);
 		
-		
-		
+		System.out.println("----------------------------------------------");
+		System.out.println("총점\t" + korSum + "\t" + engSum + "\t" + mathSum);
+		System.out.printf("평균\t%.1f\t%.1f\t%.1f\n", korSum/(double)5, engSum/(double)5, mathSum/(double)5);
 
 	}
 }
