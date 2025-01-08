@@ -12,21 +12,5 @@ public class Document {
 		this.name = name;
 		System.out.println(this.name +".txt 문서가 생성됨");
 	}
-
-	/*
-	 * String name;
-	int pro_num;
-	static int count;
-	
-	Product () {
-		System.out.println("제품명이 없습니다.");
-	}
-	
-	Product (String name) {
-		this.name = name;
-		System.out.println(this.name +"");
-	}
-	 */
-	
 	
 }
