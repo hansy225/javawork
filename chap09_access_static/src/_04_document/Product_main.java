@@ -12,6 +12,15 @@ public class Product_main {
         System.out.println("제품번호: 34567 " + product3.getPro_num());
         
         System.out.println("생성된 총 제품 수: " + Product.getCount());
+        System.out.println("---------------------");
+        
+        Product product4 = new Product("더조은4");
+        Product product5 = new Product("더조은5");
+        
+        System.out.println("제품번호: 45678 " + product4.getPro_num());
+        System.out.println("제품번호: 56789 " + product5.getPro_num());
+        
+        System.out.println("생성된 총 제품 수: " + Product.getCount());
 	}
 
 }
