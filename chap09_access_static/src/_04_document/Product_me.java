@@ -1,6 +1,6 @@
 package _04_document;
 
-public class Product {
+public class Product_me {
 	/*
 	 교유의 제품번호 (더조은1)
 	 제품의 갯수(객체가 생성된 갯수)
@@ -9,7 +9,7 @@ public class Product {
 	String pro_num;
 	static int count;
 	
-	Product (String pro_num) {
+	Product_me (String pro_num) {
 		this.pro_num = pro_num;
 		count++;
 	}

@@ -1,12 +1,12 @@
 package _02_Car;
 
 public class Car {
-	String model;
+	public String model;
 	String company;
 	boolean power;
 	int speed;
 	
-	Car (String model, String company) {
+	public Car (String model, String company) {
 		this.model = model;
 		this.company = company;
 	}
