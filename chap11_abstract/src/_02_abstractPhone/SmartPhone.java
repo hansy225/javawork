@@ -1,4 +1,4 @@
-package _03_ex;
+package _02_abstractPhone;
 
 public class SmartPhone extends Phone {
 	
@@ -18,14 +18,14 @@ public class SmartPhone extends Phone {
 		System.out.println(search + "를 검색합니다");
 		return "검색완료";
 	}
+	
 	@Override
 	void hangUp() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("손가락을 오른쪽으로 민다");
 	}
+	
 	@Override
 	void hangOut() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("손가락을 왼쪽으로 민다");
 	}
 }

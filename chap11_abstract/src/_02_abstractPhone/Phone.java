@@ -1,6 +1,6 @@
-package _03_ex;
+package _02_abstractPhone;
 
-abstract public class Phone {
+public class Phone {
 	String model;
 	String color;
 	
@@ -13,6 +13,10 @@ abstract public class Phone {
 		System.out.println("벨이 울립니다");
 	}
 	
+	void hangUp() {
+		System.out.println("전화를 받는다");
+	}
+	
 	void sendVoice(String message) {
 		System.out.println(message);
 	}
@@ -21,7 +25,7 @@ abstract public class Phone {
 		System.out.println(message);
 	}
 	
-	abstract void hangUp();
-	abstract void hangOut();
-	
+	void hangOut() {
+		System.out.println("전화를 끊는다");
+	}
 }
