@@ -19,7 +19,7 @@ public class Cat extends Pet {
 	 
 	 @Override
 	 public void sound() {
-		 System.out.println("야옹");
+		 System.out.println("야옹");  // 구현해주지 않으면 오류 발생
 	 }
 	 
 }
