@@ -43,7 +43,7 @@ public class T06_inputMismatch {
 			try {
 				int num = sc.nextInt();
 				sum += num;
-			} catch (InputMismatchException ime) {
+			} catch (InputMismatchException ime) {  // 안맞는 자료형을 넣었을 때 발생하는 오류
 				System.out.println("정수만 입력 가능");
 				sc.next();  // 정수가 아닌 값이 들어온걸 비워줌
 				i--;

@@ -1,5 +1,6 @@
 package _02_userException;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Bank_main {
@@ -10,12 +11,16 @@ public class Bank_main {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("찾을 금액 : ");
+		
+		
 		try {
 			int money = sc.nextInt();
 			bank.withdraw(money);
 		} catch (UserException e) {
 			System.out.println(e.getMessage());
-		}  catch (Exception e) {
+		}  catch (InputMismatchException ime) {
+			System.out.println("정수만 입력 가능");
+		} catch (Exception e) {
 			System.out.println("예외 발생");
 		}
 	}

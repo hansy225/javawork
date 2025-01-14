@@ -15,10 +15,10 @@ public class T10_finally {
 		int [] num = {1,2,3};
 		try {
 			System.out.println(num[0]);
-			System.out.println(num[1]);
-			return;
+			System.out.println(num[6]);
 		} catch (Exception e) {
 			System.out.println("index의 범위를 넘어섬");
+			return;
 		} finally {  // return을 만나도 무조건 실행
 			System.out.println("예외가 발생해도 실행, 안해도 실행, 무조건 실행");
 		}

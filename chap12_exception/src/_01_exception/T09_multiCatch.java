@@ -20,8 +20,8 @@ public class T09_multiCatch {
 			int num1 = sc.nextInt();  // inputMismatch
 			int num2 = sc.nextInt();
 			
-//			int [] num = {1,2,3};
-//			System.out.println(num[3]);
+			int [] num = {1,2,3};
+			System.out.println(num[3]);
 			
 			System.out.println("몫 : " +num1/num2);  // arithmetic
 			System.out.println("나머지 : " +num1%num2);
@@ -32,7 +32,7 @@ public class T09_multiCatch {
 			System.out.println("예외 메시지 : " +ae.getMessage());  // 예외 클래스 인스턴스에 저장된 메시지 출력
 		} catch (InputMismatchException ime) {
 			System.out.println("정수만 입력 가능");
-		} catch (Exception e) {  // 위의 catch문 2개를 제외한 예외들은 다 여기서 처리 --> 맨마지막에 넣어야 함
+		} catch (Exception e) {  // 위에 작성한 catch문 2개를 제외한 예외들은 다 여기서 처리 --> 맨마지막에 넣어야 함
 			// Exception은 가장 상위 부모 : 모든 예외 다 처리
 			System.out.println("예외 처리");
 		}
