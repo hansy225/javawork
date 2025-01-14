@@ -11,6 +11,13 @@ package _01_langPackage;
 
 class A {
 	int num = 3;
+	
+	int getNum() {
+		return num;
+	}
+	void setNum (int Num) {
+		this.num = num;
+	}
 }
 
 class Point implements Cloneable {
@@ -57,7 +64,7 @@ class Point implements Cloneable {
 			e.printStackTrace();
 		}
 		
-		new A().num = a.num;
+		new A().setNum(a.num);
 		
 		return (Point)obj;
 	}
