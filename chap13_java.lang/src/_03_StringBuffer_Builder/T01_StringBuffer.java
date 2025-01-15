@@ -9,7 +9,7 @@ package _03_StringBuffer_Builder;
  				자주 변경되는 문자열을 사용할 때, 단일 스레드를 사용 시
  				StringBuffer보다 빠르다
  				
- #StringBuffer와 StringBuilder 메서드
+ # StringBuffer와 StringBuilder 메서드
   - append() : 문자열을 맨 뒤에 추가
   - insert() : 지정된 위치에 문자열을 삽입
   - delete() : 특정 범위의 문자열을 삭제
