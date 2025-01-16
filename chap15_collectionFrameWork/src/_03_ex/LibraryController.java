@@ -28,7 +28,7 @@ public class LibraryController {
 		Book book = null;
 		for(Book b : aList) {
 			if (b.setTitle().equals(title)) {
-				return b;
+				break;
 			}
 		}
 		return book;
