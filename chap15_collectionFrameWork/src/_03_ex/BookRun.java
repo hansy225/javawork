@@ -1,28 +1,21 @@
 package _03_ex;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class BookRun {
 
 	public static void main(String[] args) {
-		LibraryController lc = new LibraryController(new Member("홍길동", 25, "남성"));
+		LibraryController lc = new LibraryController(new Member("홍길동", 23, "남자"));
 		
-		List<Book> aList = new ArrayList<>();
-		aList.add(new Book("java", "이문열","대한"));
+		lc.insertBook();
+		System.out.println(lc.selectAll());
 		
-		System.out.println("책 목록 : " +lc.selectAll());
-		
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("검색할 책 제목 입력 : ");
-		String title = sc.nextLine();
-		
-		
-		
-		
-		
-	}
+		lc.insertBook(new Book("springBoot", "박봄이", "위키북스"));
+		System.out.println(lc.selectAll());
 
+		Book book = lc.searchBook("java");
+		if(book == null) {
+			System.out.println("찾는 책이 없습니다");
+		} else {
+			System.out.println("찾은 책 : " + book);
+		}
+	}
 }
