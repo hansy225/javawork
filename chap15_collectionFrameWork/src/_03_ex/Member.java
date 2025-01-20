@@ -5,38 +5,41 @@ public class Member {
 	private int age;
 	private String gender;
 	
-	public Member () { }
+	public Member() {
+	}
 	
-	public Member (String name, int age, String gender) {
+	public Member(String name, int age, String gender) {
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 	}
-	
-	public String setName () {
+
+	public String getName() {
 		return name;
 	}
-	public int setAge () {
-		return age;
-	}
-	public String setGender () {
-		return gender;
-	}
-	
-	public void getName (String name) {
+
+	public void setName(String name) {
 		this.name = name;
 	}
-	public void setAge (int age) {
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
 		this.age = age;
 	}
-	public void setGender (String gender) {
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "이름 : " +name +"나이 : " +age +"성별 : " +gender;
+		return "이름 : " + name + ", 나이 : " + age + ", 성별 : " + gender;
 	}
-
-
 }
