@@ -34,6 +34,8 @@ public class T01_Comparable {
 		treeset.add(new Person("김자바", 35));
 		treeset.add(new Person("나자바", 27));
 		
+		System.out.println(treeset);
+		
 		Iterator<Person> iterator = treeset.iterator();
 		while(iterator.hasNext()) {
 			Person p = iterator.next();
