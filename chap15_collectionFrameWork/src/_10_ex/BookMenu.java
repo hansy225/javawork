@@ -12,11 +12,14 @@ public class BookMenu {
 	
 	public void showMenu () {
 		while (true) {
-			System.out.println("*******메뉴*******");
-			System.out.println("1. 새 책 추가 / 2. 전체 도서 조회");
-			System.out.println("3. 도서검색 / 4. 도서 삭제");
-			System.out.println("5. 도서명 오름차순 정렬 / 0. 종료");
-			System.out.print("메뉴를 선택하세요 : ");
+			System.out.println("********* 메뉴 *********");
+			System.out.println("1. 새 책 추가");
+			System.out.println("2. 전체 도서 조회");
+			System.out.println("3. 도서검색");
+			System.out.println("4. 도서 삭제");
+			System.out.println("5. 도서명 오름차순 정렬");
+			System.out.println("0. 종료");
+			System.out.print(" - 메뉴 번호 선텍 : ");
 			
 			int choice = sc.nextInt();
 			sc.nextLine();
@@ -67,20 +70,22 @@ public class BookMenu {
 		return null;
 	}
 	
-	private void searchBook() {
+	void searchBook() {
 		System.out.print("검색할 책의 제목을 입력하세요 : ");
-		String title = sc.nextLine();
-		Book book = LibraryController.searchBook(title);
+		String keyword = sc.nextLine();
+		Book book = LibraryController.searchBook(keyword);
 		if (book == null) 
 			System.out.println("찾는 책이 없습니다.");
 		else
-			System.out.println("찾는 책 : " +book);
+			System.out.println("찾는 책 - " +book);
 	}
 
-	private void deleteBook() {
-		System.out.println("삭제할 책의 제목을 입력하세요 : ");
+	void deleteBook() {
+		System.out.print("삭제할 책의 제목을 입력하세요 : ");
 		String title = sc.nextLine();
-		Book book = LibraryController.searchBook(title);
+		System.out.print("삭제할 책의 저자를 입력하세요 : ");
+		String author = sc.nextLine();
+		Book book = LibraryController.deleteBook(title, author);
 		if (book != null) {
 			LibraryController.aList.remove(book);
 			System.out.println(book +"도서가 삭제 되었습니다");
@@ -89,8 +94,11 @@ public class BookMenu {
 		}
 	}
 	
-	private void sortBook() {
+	void sortBook() {
 		LibraryController.aList.sort(null);
+		/* sort(null) : null은 리스트 요소들이 Comparable 인터페이스를 구현하는 경우,
+		 				compareTo 메소드에 기반하여 정렬을 함
+		 				 - 현재 Book 객체의 title을 기반으로 오름차순 정렬해줌 */
 	    System.out.println("도서명이 오름차순으로 정렬되었습니다.");
 	}
 

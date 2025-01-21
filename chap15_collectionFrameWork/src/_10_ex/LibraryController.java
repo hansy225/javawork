@@ -40,4 +40,8 @@ public class LibraryController {
 		}
 		return book;
 	}
+
+	public Book deleteBook(String title, String author) {
+		return null;
+	}
 }
