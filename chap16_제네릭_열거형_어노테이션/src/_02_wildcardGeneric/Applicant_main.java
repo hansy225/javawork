@@ -21,6 +21,10 @@ public class Applicant_main {
 		Course.registerCourse2(new Applicant<Student>(new Student()));
 		Course.registerCourse2(new Applicant<HighStudent>(new HighStudent()));
 		Course.registerCourse2(new Applicant<MiddleStudent>(new MiddleStudent()));
+		
+		// 
+		System.out.println("-- 직장인 또는 일반인 등록 가능한 코스 --");
+		Course.registerCourse3(new Applicant<Worker>(new Worker())  );
 
 	}
 
